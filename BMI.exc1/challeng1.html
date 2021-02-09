@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 25px;
+        font-family: sans-serif;
+       
+    }
+    table{
+        border: solid 1px rgb(3, 3, 3);
+        width: auto;
+        height: 100px;
+        text-align: center;
+        background-color: rgb(6, 126, 182);
+    }
+    
+    tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+
+p{
+   
+    color: rgb(31, 50, 133);
+}
+input {
+    width: 100px;
+    border: none;
+    outline-style: none;
+}
+#btnBmi {
+    border: none;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(119, 127, 161);
+    box-shadow: 1px 2px 2px 1px rgb(64, 73, 78);
+    outline-style: none;
+    border-radius: 5px;
+    color: rgb(2, 40, 77);
+}
+#btnBmi:hover{
+    background-color: rgb(6, 126, 182);
+    color: white;
+}
+#result {
+    color: blue;
+    font-size: 22px;
+}
+@media screen and (max-width: 400px){
+    table{
+       width: auto;
+       height: auto;
+    }
+}
+
+</style>
+<body>
+    <h1>BMI</h1>
+    <p>Enter your name,height and mass.</p>
+     <table>
+         <tr>
+             <th>Name </th>
+             <th>Height </th>
+             <th>Mass</th>
+         </tr>
+         <td><input id='nameval' type="text" ></td>
+         <td><input  id='height' type="number" ></td>
+         <td><input  id='mass' type="number" ></td>
+     </table>
+      <div>
+        <input type="submit" value="Enter" id='btnBmi'> 
+        <p id= 'result'></p>
+      </div>
+     
+    <script src='challeng1.js'></script>
+</body>
+</html>
