@@ -37,12 +37,7 @@ function validacao() {
 
    }
 
-
-
 }
-
-
-
 
 document.querySelector('form').addEventListener('submit', event => {
    event.preventDefault()
