@@ -10,5 +10,5 @@ console.log (koala,dolphi)
      else console.log('Koalas wins score: ' + koala)
      
  }
-checkwinner(dolphi,koala);
+checkwinner(dolphi,koala); // Dolphis wins score: 50
   
